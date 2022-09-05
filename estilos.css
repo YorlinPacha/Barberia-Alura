@@ -308,6 +308,10 @@ form, .ingresar-datos{
         margin: 0 0 16px 0;
     }
 
+    .imgProducto{
+        width: 100%;
+    }
+
 /*Aplicando diseño reponsive PAGINA contacto*/
     fieldset legend{
         text-align: center;
