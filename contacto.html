@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contacto - Barberia Alura</title>
+    <!-- Importante para limpiar -->
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="estilos.css" />
+    <!-- Agregar una fuente externa -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Fascinate&family=Montserrat:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Cabecera de la pagina -->
+    <header>
+      <div class="caja">
+        <!-- Dar importancia a la imagen con un titulo H1-->
+        <h1><img src="img2/logo.png" alt="" /></h1>
+
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="productos.html">Productos</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Cuerpo de la pagina  - Crear una lista de items -->
+    <main>
+      <div class="formulario">
+        <form>
+          <div class="ingresar-datos">
+            <label for="nombreapellido">Nombre y Apellido</label>
+            <input type="text" id="nombreapellido" class="input-padron" required />
+  
+            <label for="correoelectronico">Correo Electronico</label>
+            <input type="email" id="correoelectronico" class="input-padron" required placeholder="email" />
+  
+            <label for="telefono">Telefono</label>
+            <input type="tel" id="telefono" class="input-padron" required placeholder="(xx)xxx xxx" />
+  
+            <!-- Cuadro de texto -->
+            <label for="mensaje">Mensaje</label>
+            <textarea cols="70" rows="10" id="mensaje" class="input-padron" required></textarea>
+          </div>
+          
+          <fieldset>
+            <!-- Fieldset en ves de div  - esta tag se usa para agrupar elementos relacionados -->
+            <!-- Separar contenido, mas organizado -->
+            <!-- Al usar fieldset se cambia <p> por <legend> -->
+            <legend>¿Como le gustaria que lo contactemos?</legend>
+  
+            <!-- name="contacto" esta propiedad si es igual , permite solo una opcion-->
+  
+            <!-- <label for="radio-email">Email</label>      Esta forma primero estara el NOMBRE y luego "O"
+                 <input type="radio" name="contacto" value="email" id="radio-email" />     Aca abajo NO-->
+            <div class="input-contacto">
+              <label for="radio-email"
+              ><input type="radio" name="contacto" value="email" id="radio-email" />Email</label
+            >
+  
+            <label for="radio-telefono"
+              ><input type="radio" name="contacto" value="telefono" id="radio-telefono" />Telefono</label
+            >
+  
+            <label for="radio-Whatsapp"
+              ><input type="radio" name="contacto" value="Whatsapp" id="radio-Whatsapp" checked />WhatsApp</label
+            >
+            </div>
+            
+          </fieldset>
+  
+          <!-- Crea una ventana de opciones-->
+  
+          <fieldset>
+            <legend>En que horario le gustaria ser atendido?</legend>
+            <select class="selecciones">
+              <option>Mañana</option>
+              <option>Tarde</option>
+              <option>Noche</option>
+            </select>
+          </fieldset>
+  
+          <!-- Agregar un checkbox en una sola linea -->
+          <label class="checkbox"
+            ><input type="checkbox" checked />Le gustaria recibir novedades de la barberia Alura?</label
+          >
+  
+          <input type="submit" name="contacto" value="Enviar Formulario" class="enviar" />
+        </form>
+
+      </div>
+      
+
+      <!-- Agregaremos una tabla -->
+      <div class="table-caja">
+        <table>
+          <thead>
+            <tr>
+              <th>Día</th>
+              <th>Horario</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Lunes</td>
+              <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+              <td>Miércoles</td>
+              <td>8h ~ 20h</td>
+            </tr>
+            <tr>
+              <td>Viernes</td>
+              <td>8h ~ 20h</td>
+            </tr>
+          </tbody>
+        </table>
+      </main>
+
+      </div>
+      
+
+    <!-- Pie de la pagina  - Crear una pie de pagina -->
+    <footer>
+      <img src="img2/logo-blanco.png" alt="" />
+      <p class="copyright">&copy Derecho reservados Alura</p>
+    </footer>
+  </body>
+</html>
