@@ -292,7 +292,7 @@ form, .ingresar-datos{
         font-size: 18px;  
     }
     
-    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video{
+    .caja, .principal, .mapa-contenido, .contenido-diferenciales, .video, .productos{
         width: auto;
     }
 
@@ -304,6 +304,7 @@ form, .ingresar-datos{
 /*Aplicando diseño reponsive PAGINA Productos*/
     .productos li{
         display: block;
+        width: auto;
         margin: 0 0 16px 0;
     }
 
